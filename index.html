@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David - The adventures of a developer who nostalgic about simple and usable applications</title>
+  <meta name="description" content="Personal homepage of David. TypeScript & Elixir developer, riding Agent into battle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <section class="hero">
+      <div class="hero-frame">
+        <img
+          src="assets/hero.png"
+          alt="Pixel art portrait: a knight on a horse named Agent, holding a TypeScript scroll and an Elixir potion, with a loyal dog riding along"
+          class="hero-image"
+        >
+      </div>
+      <p class="hero-preamble">The Amazing Adventures of</p>
+      <h1 class="hero-name">David and Bendeguz</h1>
+    </section>
+
+    <section class="quest-board">
+      <h2 class="section-title">Quest Board</h2>
+
+      <div class="quests">
+        <article class="quest-card">
+          <span class="quest-badge quest-badge--active">Active Quest</span>
+          <h3 class="quest-title">Calorie Counter</h3>
+          <p class="quest-summary">Count calories without the guilt.</p>
+          <p class="quest-description">
+            A lightweight, offline-first PWA for tracking daily calorie intake.
+            No gamification, no unwanted advice, no streak shaming &mdash; just
+            fast, honest calorie counting with barcode scanning.
+          </p>
+          <a href="https://cc.mrnagydavid.dev" class="quest-link" target="_blank" rel="noopener">
+            Go on quest &rarr;
+          </a>
+        </article>
+
+        <article class="quest-card quest-card--locked">
+          <span class="quest-badge quest-badge--locked">Locked</span>
+          <h3 class="quest-title">???</h3>
+          <p class="quest-summary">A new quest awaits...</p>
+        </article>
+
+        <article class="quest-card quest-card--locked">
+          <span class="quest-badge quest-badge--locked">Locked</span>
+          <h3 class="quest-title">???</h3>
+          <p class="quest-summary">A new quest awaits...</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <h2 class="section-title">The Mission</h2>
+
+      <p>
+        I'm nostalgic of the web, before it was taken over by companies. 
+        You visited someone's homepage and it felt like walking into their room &mdash; weird
+        wallpaper, a guest book, maybe a MIDI file playing and a bat GIF pointlessly flying across the viewport.
+        Checking the "Links" collection to see where to next... It was exploration, it was treasure hunting.
+        It wasn't hyper-optimised for engagement. It wasn't tracking across websites. Noone sent you an email to visit again. 
+        <br> It was honest.
+      </p>
+
+      <p>
+        I try to build things with that kind of simplicity in mind. Mostly for myself.
+        Apps that do one thing, do it fast, and
+        get out of your way. No accounts unless truly needed. No
+        tracking. No dark patterns. No streaks to guilt you into
+        coming back. If the app is useful, you'll come back on your
+        own.
+      </p>
+
+      <p>
+        The tools have never been better &mdash; TypeScript, Elixir,
+        agentic development that lets a single person ship what used
+        to take a team. It's amazing. But in no way does this mean that it's the end of a profit-driven web.
+      </p>
+
+      <p>And it's okay. What are companies, anyway? Companies are people, users are people. It's between us.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built with vanilla HTML, CSS &amp; Claude</p>
+  </footer>
+
+  <nav class="theme-switcher" aria-label="Theme switcher">
+    <div class="theme-swatches">
+      <button class="theme-btn theme-btn--parchment" data-theme="parchment" aria-pressed="true" title="Parchment"></button>
+      <button class="theme-btn theme-btn--night-camp" data-theme="night-camp" aria-pressed="false" title="Night Camp"></button>
+      <button class="theme-btn theme-btn--tavern" data-theme="tavern" aria-pressed="false" title="Tavern"></button>
+      <button class="theme-btn theme-btn--stone-keep" data-theme="stone-keep" aria-pressed="false" title="Stone Keep"></button>
+      <button class="theme-btn theme-btn--enchanted-forest" data-theme="enchanted-forest" aria-pressed="false" title="Enchanted Forest"></button>
+    </div>
+    <label class="theme-save-label">
+      <input type="checkbox" id="theme-save" class="theme-save-checkbox">
+      <span class="theme-save-check" aria-hidden="true"></span>
+      <span class="theme-save-text">Save choice in browser</span>
+    </label>
+  </nav>
+
+  <script src="theme.js"></script>
+</body>
+</html>
