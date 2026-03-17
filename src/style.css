@@ -232,6 +232,16 @@ main {
   color: var(--text);
 }
 
+.manifesto a {
+  color: var(--accent-gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.manifesto a:hover {
+  color: var(--text);
+}
+
 
 /* ===== Footer ===== */
 
