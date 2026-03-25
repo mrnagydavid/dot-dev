@@ -113,6 +113,7 @@ main {
 /* ===== Quest Card ===== */
 
 .quest-card {
+  position: relative;
   background: var(--bg-card);
   border: 3px solid var(--border);
   box-shadow: var(--shadow-md);
@@ -134,6 +135,17 @@ main {
   opacity: 0.55;
   filter: grayscale(20%);
   cursor: default;
+}
+
+/* Card image (top-right corner) */
+.quest-image {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 72px;
+  height: 72px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 /* Badge */
