@@ -40,6 +40,12 @@ body {
   align-items: center;
 }
 
+a {
+  color: var(--accent-gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 main {
   width: 100%;
   max-width: 960px;
@@ -242,12 +248,6 @@ main {
 .manifesto p:last-child {
   margin-bottom: 0;
   color: var(--text);
-}
-
-.manifesto a {
-  color: var(--accent-gold);
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 .manifesto a:hover {
