@@ -1,137 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David - The adventures of a developer who is nostalgic about simple and usable applications</title>
-  <meta name="description" content="Personal homepage of David. TypeScript & Elixir developer, riding Agent into battle.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David · Small apps that do one thing</title>
+  <meta name="description" content="David's homepage. Small, offline-first apps with no accounts and no tracking: Calorie Counter, Yak, Lemma and GamePad.">
+  <meta name="theme-color" content="#FFFFFF">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700;800&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="wrap">
 
-  <main>
-    <section class="hero">
-      <div class="hero-frame">
-        <img
-          src="assets/hero.png"
-          alt="Pixel art portrait: a knight on a horse named Agent, holding a TypeScript scroll and an Elixir potion, with a loyal dog riding along"
-          class="hero-image"
-        >
-      </div>
-      <p class="hero-preamble">The Amazing Adventures of</p>
-      <h1 class="hero-name">David and Bendeguz</h1>
-    </section>
+    <main id="main">
 
-    <section class="quest-board">
-      <h2 class="section-title">Quest Board</h2>
+      <section class="hero hero--home">
+        <div class="hero__text">
+          <h1 class="display">Small apps that do one thing and leave you alone.</h1>
+          <p class="lead">I'm David. I write TypeScript and Elixir for a living, and I build these apps for myself first. Bendeguz, my dog, is in charge of quality control.</p>
+        </div>
+        <div class="hero__figure">
+          <img class="portrait" src="assets/hero.webp" width="760" height="1140" alt="Pixel art: David as a knight riding a horse named Agent. He holds a TypeScript scroll and an Elixir potion. Bendeguz the dog rides behind him.">
+        </div>
+      </section>
 
-      <div class="quests">
-        <article class="quest-card">
-          <img src="assets/cc.webp" alt="Pixel art icon of the Calorie Counter app" class="quest-image">
-          <span class="quest-badge quest-badge--active">Active Quest</span>
-          <h3 class="quest-title">Calorie Counter</h3>
-          <p class="quest-summary">Count calories without the guilt.</p>
-          <p class="quest-description">
-            A lightweight, offline-first PWA for tracking daily calorie intake.
-            No gamification, no unwanted advice, no streak shaming &mdash; just
-            fast, honest calorie counting with barcode scanning.
-          </p>
-          <a href="https://cc.mrnagydavid.dev" class="quest-link" target="_blank" rel="noopener">
-            Go on quest &rarr;
-          </a>
-        </article>
+      <section id="apps" class="apps" aria-labelledby="apps-title">
+        <div class="apps__head">
+          <h2 id="apps-title" class="label">Apps</h2>
+          <span>4 live · 1 in the workshop</span>
+        </div>
 
-        <article class="quest-card">
-          <img src="assets/yak.webp" alt="Icon of the Yak vocabulary trainer app: a shaggy yak with a speech bubble reading &quot;yak&quot;" class="quest-image">
-          <span class="quest-badge quest-badge--active">Active Quest</span>
-          <h3 class="quest-title">Yak</h3>
-          <p class="quest-summary">Build your vocabulary, word by word.</p>
-          <p class="quest-description">
-            An offline-first vocabulary trainer PWA inspired by <a href="https://apps.ankiweb.net/">Anki</a> with a focus on language
-            learners (currently Swedish-learners only).
-          </p>
-          <a href="https://yak.mrnagydavid.dev" class="quest-link" target="_blank" rel="noopener">
-            Go on quest &rarr;
-          </a>
-        </article>
+        <ul class="app-list">
+          <li>
+            <a class="app-row app-cc" href="calorie-counter/">
+              <img class="app-row__icon" src="assets/cc.webp" width="56" height="56" alt="">
+              <span class="app-row__title">
+                <span class="app-row__name"><span class="dot"></span>Calorie Counter</span>
+                <span class="host">cc.mrnagydavid.dev</span>
+              </span>
+              <span class="app-row__pitch">Count calories without the guilt.</span>
+              <span class="app-row__facts">Few taps · no streaks</span>
+              <svg class="app-row__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="app-row app-yak" href="yak/">
+              <img class="app-row__icon" src="assets/yak.webp" width="56" height="56" alt="">
+              <span class="app-row__title">
+                <span class="app-row__name"><span class="dot"></span>Yak</span>
+                <span class="host">yak.mrnagydavid.dev</span>
+              </span>
+              <span class="app-row__pitch">Build your vocabulary, word by word.</span>
+              <span class="app-row__facts">Spaced repetition · no decks</span>
+              <svg class="app-row__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="app-row app-lemma" href="lemma/">
+              <img class="app-row__icon" src="assets/lemma.webp" width="56" height="56" alt="">
+              <span class="app-row__title">
+                <span class="app-row__name"><span class="dot"></span>Lemma</span>
+                <span class="host">lemma.mrnagydavid.dev</span>
+              </span>
+              <span class="app-row__pitch">Look up words, learn languages.</span>
+              <span class="app-row__facts">Wiktionary, bab.la and IPA</span>
+              <svg class="app-row__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="app-row app-gamepad" href="gamepad/">
+              <img class="app-row__icon" src="assets/gamepad.webp" width="56" height="56" alt="">
+              <span class="app-row__title">
+                <span class="app-row__name"><span class="dot"></span>GamePad</span>
+                <span class="host">gamepad.mrnagydavid.dev</span>
+              </span>
+              <span class="app-row__pitch">A pocketful of classic games.</span>
+              <span class="app-row__facts">5 games · works offline</span>
+              <svg class="app-row__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <div class="app-row app-row--soon">
+              <span class="app-row__icon app-row__icon--blank"></span>
+              <span class="app-row__name">Next app</span>
+              <span class="app-row__pitch">In the workshop. Not ready to show yet.</span>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-        <article class="quest-card">
-          <img src="assets/lemma.webp" alt="Pixel art icon of the Lemma dictionary app" class="quest-image">
-          <span class="quest-badge quest-badge--active">Active Quest</span>
-          <h3 class="quest-title">Lemma</h3>
-          <p class="quest-summary">Look up words, learn languages.</p>
-          <p class="quest-description">
-            A minimal dictionary PWA that searches Wiktionary and Bab.la.
-            Pick a language, type a word, get the definition &mdash; no
-            accounts, no flashcard upsells, no clutter.
-          </p>
-          <a href="https://lemma.mrnagydavid.dev" class="quest-link" target="_blank" rel="noopener">
-            Go on quest &rarr;
-          </a>
-        </article>
+      <section class="block block--tight" aria-labelledby="rules-title">
+        <h2 id="rules-title" class="h2 h2--small">Every app follows the same rules</h2>
+        <div class="pillars">
+          <div class="pillar">
+            <h3>Works offline</h3>
+            <p>Install it once. It keeps working on a plane or in a basement.</p>
+          </div>
+          <div class="pillar">
+            <h3>No account</h3>
+            <p>Nothing to sign up for. Open it and use it.</p>
+          </div>
+          <div class="pillar">
+            <h3>No tracking</h3>
+            <p>No analytics. No ads. No streaks to pull you back.</p>
+          </div>
+          <div class="pillar">
+            <h3>Your data stays with you</h3>
+            <p>Everything lives on your device. Export it as JSON when you want.</p>
+          </div>
+        </div>
+      </section>
 
-        <article class="quest-card">
-          <img src="assets/gamepad.webp" alt="Pixel art icon of the GamePad app" class="quest-image">
-          <span class="quest-badge quest-badge--active">Active Quest</span>
-          <h3 class="quest-title">GamePad</h3>
-          <p class="quest-summary">A pocketful of classic games.</p>
-          <p class="quest-description">
-            A retro, offline-first PWA hosting a curated collection of
-            single-player classics &mdash; Minesweeper, Bang! Bang!,
-            JeezBall and more. No accounts, no ads &mdash; just the
-            games, the way you remember them.
-          </p>
-          <a href="https://gamepad.mrnagydavid.dev" class="quest-link" target="_blank" rel="noopener">
-            Go on quest &rarr;
-          </a>
-        </article>
+      <section id="why" class="split split--ruled" aria-labelledby="why-title">
+        <h2 id="why-title" class="label">Why I build this way</h2>
+        <div class="prose">
+          <p>I'm nostalgic about the web, before it was taken over by companies. You visited someone's homepage and it felt like walking into their room &mdash; weird wallpaper, a guest book, maybe a MIDI file playing and a bat GIF pointlessly flying across the viewport. Checking the "Links" collection to see where to next... It was exploration, it was treasure hunting. It wasn't hyper-optimised for engagement. It wasn't tracking across websites. No one sent you an email to visit again.<br>It was honest and simple.</p>
+          <p>I try to build things with that kind of simplicity in mind. Mostly for myself. Apps that do one thing, do it fast, and get out of your way. No accounts unless truly needed. No tracking. No dark patterns. No streaks to guilt you into coming back. If the app is useful, you'll come back on your own.</p>
+          <p>This is not about making things free (as in beer). This is not about being anti-establishment.</p>
+          <p>As a user, it's about <a href="https://en.wikipedia.org/wiki/Satisficing">satisficing</a>.<br>As a provider, it's about <a href="https://37signals.com/10">resisting the idea of constant growth</a>.</p>
+        </div>
+      </section>
 
-        <article class="quest-card quest-card--locked">
-          <span class="quest-badge quest-badge--locked">Locked</span>
-          <h3 class="quest-title">???</h3>
-          <p class="quest-summary">A new quest awaits...</p>
-        </article>
-      </div>
-    </section>
+    </main>
 
-    <section class="manifesto">
-      <h2 class="section-title">The Mission</h2>
+    <footer class="site-footer">
+      <span>Built with vanilla HTML, CSS &amp; Claude</span>
+      <span>No cookies · No analytics</span>
+    </footer>
 
-      <p>
-        I'm nostalgic about the web, before it was taken over by companies. 
-        You visited someone's homepage and it felt like walking into their room &mdash; weird
-        wallpaper, a guest book, maybe a MIDI file playing and a bat GIF pointlessly flying across the viewport.
-        Checking the "Links" collection to see where to next... It was exploration, it was treasure hunting.
-        It wasn't hyper-optimised for engagement. It wasn't tracking across websites. No one sent you an email to visit again. 
-        <br> It was honest and simple.
-      </p>
-
-      <p>
-        I try to build things with that kind of simplicity in mind. Mostly for myself.
-        Apps that do one thing, do it fast, and
-        get out of your way. No accounts unless truly needed. No
-        tracking. No dark patterns. No streaks to guilt you into
-        coming back. If the app is useful, you'll come back on your
-        own.
-      </p>
-
-      <p>
-        This is not about making things free (as in beer). This is not about being anti-establishment.
-      </p>
-
-      <p>
-        As a user, it's about <a href="https://en.wikipedia.org/wiki/Satisficing" target="_blank">satisficing</a>. <br>
-        As a provider, it's about <a href="https://37signals.com/10" target="_blank">resisting the idea of constant growth</a>.
-      </p>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>Built with vanilla HTML, CSS &amp; Claude</p>
-  </footer>
-
+  </div>
 </body>
 </html>

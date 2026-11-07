@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yak · mrnagydavid.dev</title>
+  <meta name="description" content="Yak: a vocabulary trainer for language learners. Open it and practise. Words, not cards. Works offline, no account.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="app-yak">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="wrap">
+
+    <header class="site-header">
+      <a class="brand" href="../"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>mrnagydavid.dev</a>
+      <nav class="site-nav" aria-label="Apps">
+        <a href="../calorie-counter/">Calorie Counter</a>
+        <a href="../yak/" aria-current="page">Yak</a>
+        <a href="../lemma/">Lemma</a>
+        <a href="../gamepad/">GamePad</a>
+      </nav>
+    </header>
+
+    <main id="main">
+
+      <section class="hero">
+        <div class="hero__text">
+          <div class="app-id">
+            <img src="../assets/yak.webp" width="64" height="64" alt="Yak icon: a shaggy yak with a speech bubble that says yak">
+            <div>
+              <span class="app-id__name">Yak</span>
+              <span class="host">yak.mrnagydavid.dev</span>
+            </div>
+          </div>
+          <h1 class="display">Build your vocabulary, word by word.</h1>
+          <p class="lead">A vocabulary trainer for language learners. Open it and the first word is already on screen. Tap to see the answer, say how well you knew it, and Yak decides when you see the word again.</p>
+          <div class="cta">
+            <a class="btn" target="_blank" rel="noopener" href="https://yak.mrnagydavid.dev">Open Yak<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+            <span class="note">Free · Works offline · No account</span>
+          </div>
+        </div>
+
+        <figure class="hero__figure">
+          <div class="mock mock--yak" role="img" aria-label="Illustration of a practice card: the Swedish verb springa, level A2, with its forms. The answer is to run, with an example sentence, and four buttons: Didn't know, Hard, Knew it and Easy.">
+            <div class="progress"><span></span></div>
+            <div class="yak-word">
+              <div class="mock__row mock__row--center">
+                <span class="mock__small">Swedish → English</span>
+                <span class="speaker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg></span>
+              </div>
+              <span class="yak-term">springa</span>
+              <div class="tags"><span class="tag">verb</span><span class="tag">A2</span></div>
+              <span class="yak-forms">springer · sprang · sprungit · Spring!</span>
+            </div>
+            <div class="yak-answer">
+              <strong>to run</strong>
+              <p>Hon springer varje morgon. <span>She runs every morning.</span></p>
+            </div>
+            <div class="grades">
+              <span class="grade grade--again">Didn't know</span>
+              <span class="grade grade--hard">Hard</span>
+              <span class="grade grade--good">Knew it</span>
+              <span class="grade grade--easy">Easy</span>
+            </div>
+          </div>
+        </figure>
+      </section>
+
+      <section class="strengths" aria-labelledby="diff-title">
+        <h2 id="diff-title" class="visually-hidden">What makes it different</h2>
+        <div class="strength">
+          <h3>Open and practise</h3>
+          <p>No home screen, no deck picker, no “start session” button. The first word is already there.</p>
+        </div>
+        <div class="strength">
+          <h3>Words, not cards</h3>
+          <p>No decks, no templates, no “due in 4 days”. The scheduling stays out of sight.</p>
+        </div>
+        <div class="strength">
+          <h3>Starts where you are</h3>
+          <p>A quick, optional check finds your level. Yak moves you up when you are ready.</p>
+        </div>
+      </section>
+
+      <section class="split" aria-labelledby="why-title">
+        <h2 id="why-title" class="label">Why it exists</h2>
+        <div class="prose">
+          <p>General flashcard apps like Anki are powerful, but they make you build and manage the cards yourself. Yak is made only for learning vocabulary, and for learners who are not linguists.</p>
+          <p>It brings the words, sorted by level, and it shows grammar only where it helps: the gender of a noun, the forms of a verb, a short hint when a word has more than one meaning.</p>
+          <blockquote class="quote">
+            <p>“The user's mental model is words, not cards.”</p>
+            <cite>From the app's spec</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="does-title">
+        <h2 id="does-title" class="h2">What it does</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Rate yourself</h3>
+            <p>One tap shows the answer. Then pick Didn't know, Hard, Knew it or Easy. The FSRS scheduler plans the next review.</p>
+          </div>
+          <div class="feature">
+            <h3>Both directions</h3>
+            <p>Knowing a word when you see it and saying it yourself are different skills. Yak tracks them separately.</p>
+          </div>
+          <div class="feature">
+            <h3>Grammar where it helps</h3>
+            <p>The gender of a noun, the forms of a verb, and audio for each word.</p>
+          </div>
+          <div class="feature">
+            <h3>Practice+ drills</h3>
+            <p>Short drills for the tricky parts: noun genders, irregular verbs, adjective forms and plurals.</p>
+          </div>
+          <div class="feature">
+            <h3>Your own words</h3>
+            <p>Add a word and Yak fills in the pronunciation, the part of speech and the inflections.</p>
+          </div>
+          <div class="feature">
+            <h3>One meaning at a time</h3>
+            <p>A word with several meanings gets one card for each meaning, each with its own example.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wont" aria-labelledby="wont-title">
+        <div class="wont__intro">
+          <h2 id="wont-title" class="h2">What it won't do</h2>
+          <p>Each of these was left out on purpose. Yak is also not a dictionary. For that, there is <a href="../lemma/">Lemma</a>.</p>
+        </div>
+        <ul class="chips">
+          <li>Decks to manage</li>
+          <li>Due dates and intervals on screen</li>
+          <li>Streak pressure</li>
+          <li>Leaderboards</li>
+          <li>Accounts</li>
+          <li>A paid tier</li>
+          <li>Analytics</li>
+        </ul>
+      </section>
+
+      <section class="two">
+        <div>
+          <h2 class="h3">How it's built</h2>
+          <dl class="specs">
+            <dt>Stack</dt><dd>Preact, TypeScript, Vite</dd>
+            <dt>Scheduler</dt><dd>FSRS, through ts-fsrs</dd>
+            <dt>Word list</dt><dd>Kelly Project CEFR lists, Wiktionary and ipa-dict, curated by hand</dd>
+            <dt>Storage</dt><dd>IndexedDB, on your device. Word list updates keep your progress.</dd>
+            <dt>Backup</dt><dd>JSON export and import</dd>
+          </dl>
+        </div>
+        <div>
+          <h2 class="h3">Known limits</h2>
+          <ul class="limits">
+            <li>One language for now: Swedish, for English speakers. German, Spanish and French are planned.</li>
+            <li>Some of the short hints for words with several meanings are still being reviewed by hand.</li>
+            <li>Audio uses text-to-speech, so it sounds different on each device.</li>
+            <li>No sync between devices. Use JSON export to move your progress.</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>Built with vanilla HTML, CSS &amp; Claude</span>
+      <span>No cookies · No analytics</span>
+    </footer>
+
+  </div>
+</body>
+</html>

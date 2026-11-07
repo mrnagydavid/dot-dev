@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calorie Counter · mrnagydavid.dev</title>
+  <meta name="description" content="Calorie Counter: a fast calorie log for your phone. Few taps, no guilt, no interruptions. Works offline, no account.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="app-cc">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="wrap">
+
+    <header class="site-header">
+      <a class="brand" href="../"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>mrnagydavid.dev</a>
+      <nav class="site-nav" aria-label="Apps">
+        <a href="../calorie-counter/" aria-current="page">Calorie Counter</a>
+        <a href="../yak/">Yak</a>
+        <a href="../lemma/">Lemma</a>
+        <a href="../gamepad/">GamePad</a>
+      </nav>
+    </header>
+
+    <main id="main">
+
+      <section class="hero">
+        <div class="hero__text">
+          <div class="app-id">
+            <img src="../assets/cc.webp" width="64" height="64" alt="Calorie Counter icon">
+            <div>
+              <span class="app-id__name">Calorie Counter</span>
+              <span class="host">cc.mrnagydavid.dev</span>
+            </div>
+          </div>
+          <h1 class="display">Count calories without the guilt.</h1>
+          <p class="lead">A fast calorie log for your phone. Scan a barcode or pick a recent food, see what is left for the day, and get on with it.</p>
+          <div class="cta">
+            <a class="btn" target="_blank" rel="noopener" href="https://cc.mrnagydavid.dev">Open Calorie Counter<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+            <span class="note">Free · Works offline · No account</span>
+          </div>
+        </div>
+
+        <figure class="hero__figure">
+          <div class="mock" role="img" aria-label="Illustration of the Today screen: 680 kcal left of a 2,100 kcal budget, a list of six foods, and the Scan barcode and Add food buttons.">
+            <div class="mock__row">
+              <span class="mock__title">Today</span>
+              <span class="mock__small">Thu 6 Nov</span>
+            </div>
+            <div class="cc-total">
+              <span class="cc-left">680 <small>kcal left</small></span>
+              <div class="bar"><span style="width: 67.6%"></span></div>
+              <div class="mock__row mock__small"><span>1,420 eaten</span><span>2,100 budget</span></div>
+            </div>
+            <ul class="cc-log">
+              <li><span>Oat porridge</span><span>310</span></li>
+              <li><span>Banana, medium · 118 g</span><span>105</span></li>
+              <li><span>Yogurt, vanilla · 150 g</span><span>120</span></li>
+              <li><span>Chicken wrap</span><span>540</span></li>
+              <li><span>Pasta salad</span><span>300</span></li>
+              <li><span>Coffee with milk</span><span>45</span></li>
+            </ul>
+            <div class="mock__buttons">
+              <span class="pill pill--solid">Scan barcode</span>
+              <span class="pill">Add food</span>
+            </div>
+          </div>
+        </figure>
+      </section>
+
+      <section class="strengths" aria-labelledby="diff-title">
+        <h2 id="diff-title" class="visually-hidden">What makes it different</h2>
+        <div class="strength">
+          <h3>Few taps</h3>
+          <p>A recent food is two taps away. A scanned product takes only a few more.</p>
+        </div>
+        <div class="strength">
+          <h3>No guilt</h3>
+          <p>No streaks, no badges, no judgement. Red only tells you that you are over budget.</p>
+        </div>
+        <div class="strength">
+          <h3>No interruptions</h3>
+          <p>No animations and no congratulations. The next screen shows up, and you get on with your day.</p>
+        </div>
+      </section>
+
+      <section class="split" aria-labelledby="why-title">
+        <h2 id="why-title" class="label">Why it exists</h2>
+        <div class="prose">
+          <p>Tracking calories is not fun, and gamification does not make it more fun. So the app should be as quick as possible, and then get out of your way.</p>
+          <p>Most calorie apps want something from you: an account, a subscription, a daily streak, an opinion about your lunch. This one only wants to know what you ate.</p>
+          <p>People feel the short-term effects of what they eat. They are bad at seeing long-term trends. So the app shows the trends and leaves the judging to you.</p>
+          <blockquote class="quote">
+            <p>“Neutral colour language. Red only for over budget, as information. No streaks, no shame.”</p>
+            <cite>From the app's spec</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="does-title">
+        <h2 id="does-title" class="h2">What it does</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Recents and My foods</h3>
+            <p>Your usual breakfast is two taps away. Save your own foods, barcodes included.</p>
+          </div>
+          <div class="feature">
+            <h3>Barcode scan</h3>
+            <p>Scan the package, pick per 100 g or per serving, then scan the next one. Product data comes from Open Food Facts.</p>
+          </div>
+          <div class="feature">
+            <h3>Offline food search</h3>
+            <p>Thousands of generic foods with ready portions, like “medium banana, 118 g”. No connection needed.</p>
+          </div>
+          <div class="feature">
+            <h3>Goals you set</h3>
+            <p>Every goal is off until you turn it on. Habit goals look at 7 or 28 days, so one bad Tuesday does not count against you.</p>
+          </div>
+          <div class="feature">
+            <h3>Trends</h3>
+            <p>Calories, weight and nutrition over time. A 26-week chart and a 28-day calendar for each goal.</p>
+          </div>
+          <div class="feature">
+            <h3>Nutrients</h3>
+            <p>Fat, saturated fat, carbs, sugars, fiber, protein and salt, next to calories.</p>
+          </div>
+          <div class="feature">
+            <h3>Plan a meal</h3>
+            <p>Try a meal on a scratch pad before you log it. A recipe calculator for home cooking.</p>
+          </div>
+          <div class="feature">
+            <h3>Activity and weight</h3>
+            <p>Log a walk, run or ride, and your weight, in the same place.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wont" aria-labelledby="wont-title">
+        <div class="wont__intro">
+          <h2 id="wont-title" class="h2">What it won't do</h2>
+          <p>Each of these was left out on purpose.</p>
+        </div>
+        <ul class="chips">
+          <li>Lifestyle advice</li>
+          <li>Recipe suggestions</li>
+          <li>AI photo guessing</li>
+          <li>Gamification</li>
+          <li>Guilt trips</li>
+          <li>Social features</li>
+          <li>Accounts</li>
+        </ul>
+      </section>
+
+      <section class="two">
+        <div>
+          <h2 class="h3">How it's built</h2>
+          <dl class="specs">
+            <dt>Stack</dt><dd>Preact, TypeScript, Vite</dd>
+            <dt>Storage</dt><dd>IndexedDB, on your device</dd>
+            <dt>Food data</dt><dd>USDA, bundled with the app. Open Food Facts for barcodes.</dd>
+            <dt>Scanner</dt><dd>The browser's own barcode reader, with a fallback</dd>
+            <dt>Backup</dt><dd>JSON export and import</dd>
+          </dl>
+        </div>
+        <div>
+          <h2 class="h3">Known limits</h2>
+          <ul class="limits">
+            <li>Barcode lookup needs a connection. After the first scan, the product works offline.</li>
+            <li>Not every product is in Open Food Facts. You can save your own foods instead.</li>
+            <li>Generic food names are still technical, like “Milk, whole, 3.25% milkfat”.</li>
+            <li>On iPhone, the installed app asks for camera access again each time.</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>Built with vanilla HTML, CSS &amp; Claude</span>
+      <span>No cookies · No analytics</span>
+    </footer>
+
+  </div>
+</body>
+</html>
